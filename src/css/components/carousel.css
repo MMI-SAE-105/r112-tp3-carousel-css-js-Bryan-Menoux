@@ -29,6 +29,11 @@ Les margin négatifs à gauche et à droite corresponde à l'éespace entre le n
   justify-content: center;
   /* Marge de 16px en haut et en bas - https://developer.mozilla.org/fr/docs/Web/CSS/margin */
   margin: 16px 0;
+
+  position: absolute;
+  top: 72%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 .carousel__button {
   /* Largeur du bouton 50px - https://developer.mozilla.org/fr/docs/Web/CSS/width */
