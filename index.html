@@ -10,24 +10,43 @@
 
   <body>
     <h1>Test Carousel</h1>
+
+    <ul class="carousel__menu">
+      <li class="menu__item">
+        <a href="#item1" class="menu__link">Image 1</a>
+      </li>
+      <li class="menu__item">
+        <a href="#item2" class="menu__link">Image 2</a>
+      </li>
+      <li class="menu__item">
+        <a href="#item3" class="menu__link">Image 3</a>
+      </li>
+      <li class="menu__item">
+        <a href="#item4" class="menu__link">Image 4</a>
+      </li>
+      <li class="menu__item">
+        <a href="#item5" class="menu__link">Image 5</a>
+      </li>
+    </ul>
+
     <div class="carousel" aria-labelledby="carousel-heading">
       <h2 id="carousel-heading" class="carousel__heading sr-only">
         Carousel d'images musicales
       </h2>
       <div class="carousel__container" role="region" aria-live="polite">
-        <div class="carousel__item">
+        <div class="carousel__item" id="item1">
           <img src="/assets/img/agenda-01.avif" alt="Image musique 1" />
         </div>
-        <div class="carousel__item">
+        <div class="carousel__item" id="item2">
           <img src="/assets/img/agenda-02.avif" alt="Image musique 2" />
         </div>
-        <div class="carousel__item">
+        <div class="carousel__item" id="item3">
           <img src="/assets/img/agenda-03.avif" alt="Image musique 3" />
         </div>
-        <div class="carousel__item">
+        <div class="carousel__item" id="item4">
           <img src="/assets/img/agenda-04.avif" alt="Image musique 4" />
         </div>
-        <div class="carousel__item">
+        <div class="carousel__item" id="item5">
           <img src="/assets/img/agenda-05.avif" alt="Image musique 5" />
         </div>
       </div>

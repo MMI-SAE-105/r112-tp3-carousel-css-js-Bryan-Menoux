@@ -68,7 +68,7 @@ Les margin négatifs à gauche et à droite corresponde à l'éespace entre le n
 
 .carousel__item {
   /* L'élément prend 1 part de l'espace disponible, ne rétrécit pas, et a une largeur de base de 260px - https://developer.mozilla.org/fr/docs/Web/CSS/flex */
-  flex: 1 0 100vw;
+  flex: 1 0 40vw;
   /* Aligne l'élément au centre lors du défilement - https://developer.mozilla.org/fr/docs/Web/CSS/scroll-snap-align */
   scroll-snap-align: center;
 }
@@ -76,4 +76,49 @@ Les margin négatifs à gauche et à droite corresponde à l'éespace entre le n
 .carousel__item img {
   /* Affiche l'image comme un bloc - https://developer.mozilla.org/fr/docs/Web/CSS/display */
   display: block;
+}
+
+.carousel__menu {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background-color: lightblue;
+  border-radius: 0 15px 15px 0;
+  max-width: 100px;
+  padding: 15px;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  left: 0;
+  top: 50%;
+  transform: translate(0, -50%);
+}
+
+.menu__link {
+  color: black;
+  text-decoration: none;
+}
+
+.menu__item {
+  list-style-type: none;
+}
+
+.menu__item::before {
+  content: "";
+  background-color: black;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.menu__item--active::before {
+  content: "";
+  background-color: rgb(255, 255, 255);
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 10px;
 }

@@ -19,3 +19,23 @@ if (carousel) {
     carousel.scrollBy({ left: +scrollAmount, behavior: "smooth" });
   });
 }
+
+// *** Menu ancres *** //
+const carouselMenu = document.querySelector(".carousel__menu");
+const carouselItems = document.querySelectorAll(".carousel__item");
+
+document
+  .querySelector(".menu__item:first-child")
+  .classList.add("menu__item--active");
+
+if (carouselMenu) {
+  carouselMenu.addEventListener("click", (e) => {
+    document.querySelectorAll(".menu__item--active").forEach((item) => {
+      item.classList.remove("menu__item--active");
+    });
+
+    if (e.target.classList.contains("menu__link")) {
+      e.target.parentElement.classList.add("menu__item--active");
+    }
+  });
+}
