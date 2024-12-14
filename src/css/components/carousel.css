@@ -5,6 +5,11 @@ img {
   height: auto;
 }
 
+body {
+  background-color: whitesmoke;
+  color: #151515;
+}
+
 /* Mise en forme du carousel en CSS.
 Utiliser flex pour positionner les item du carousel les uns à coté des autres.
 La propriété "overflow-x" avec la valeur "scroll" permet rogner le contenu afin de tenir horizontalement dans la boîte de remplissage et d'ajouter un scroll horizontal si le contenu déborde.
@@ -50,6 +55,8 @@ Les margin négatifs à gauche et à droite corresponde à l'éespace entre le n
   border: 1px solid;
   /* Bordure arrondie pour faire un cercle - https://developer.mozilla.org/fr/docs/Web/CSS/border-radius */
   border-radius: 50%;
+
+  background-color: lightblue;
 }
 .carousel__button--prev {
   /* Fait pivoter le bouton de 180 degrés - https://developer.mozilla.org/fr/docs/Web/CSS/transform */
@@ -83,10 +90,15 @@ Les margin négatifs à gauche et à droite corresponde à l'éespace entre le n
   display: block;
 }
 
+.title {
+  width: 100vw;
+  text-align: center;
+}
+
 .carousel__menu {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 15px;
   background-color: lightblue;
   border-radius: 0 15px 15px 0;
   max-width: 100px;
@@ -100,7 +112,9 @@ Les margin négatifs à gauche et à droite corresponde à l'éespace entre le n
 }
 
 .menu__link {
-  color: black;
+  color: #151515;
+  text-transform: uppercase;
+  font-weight: 700;
   text-decoration: none;
 }
 
@@ -110,7 +124,7 @@ Les margin négatifs à gauche et à droite corresponde à l'éespace entre le n
 
 .menu__item::before {
   content: "";
-  background-color: black;
+  background-color: #151515;
   width: 10px;
   height: 10px;
   border-radius: 50%;
@@ -121,9 +135,14 @@ Les margin négatifs à gauche et à droite corresponde à l'éespace entre le n
 .menu__item--active::before {
   content: "";
   background-color: rgb(255, 255, 255);
-  width: 10px;
-  height: 10px;
+  width: 8px;
+  height: 8px;
+  border: 2px #151515 solid;
   border-radius: 50%;
   display: inline-block;
   margin-right: 10px;
+}
+
+.carousel__heading {
+  margin-left: 15px;
 }
