@@ -2,7 +2,7 @@
 
 - nom :Menoux
 - prénom : Bryan
-- URL Netlify :
+- URL Netlify : http://carrousel.bryan-menoux.fr/
 
 # Travail
 
